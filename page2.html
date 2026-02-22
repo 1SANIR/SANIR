@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SANIR - نظام التوقع الذكي</title>
+    <link rel="stylesheet" href="style2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="animated-bg"></div>
+<div class="top-nav">
+    <a href="index.html" class="btn-back">
+        <span class="arrow">←</span> العودة للرئيسية
+    </a>
+</div>
+    <div class="container">
+        <header class="header">
+            <h1 class="mini-logo">SANIR <span>PREDICTOR</span></h1>
+            <div class="status-box">
+                <span class="pulse-icon"></span> النظام: <span id="system-status">جاهز للتحليل</span>
+            </div>
+        </header>
+
+        <div class="game-scene">
+            <div class="cups-container" id="cups-wrapper">
+                <div class="cup-slot" id="slot-0">
+                    <div class="cup" id="cup-0">
+                        <div class="cup-body"></div>
+                    </div>
+                </div>
+                <div class="cup-slot" id="slot-1">
+                    <div class="cup" id="cup-1">
+                        <div class="cup-body"></div>
+                    </div>
+                    <div class="ball" id="the-ball"></div> </div>
+                <div class="cup-slot" id="slot-2">
+                    <div class="cup" id="cup-2">
+                        <div class="cup-body"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <div class="accuracy-meter">
+                <p>نسبة الدقة المتوقعة: <span class="percent">100%</span></p>
+                <div class="progress-bar"><div class="fill"></div></div>
+            </div>
+            <button id="start-btn" onclick="startPrediction()">START</button>
+        </div>
+
+        <section class="history-section">
+            <h3>سجل التوقعات الأخيرة</h3>
+            <div id="history-list">
+                <div class="history-item"><span>الجولة #1042</span> <span class="win">فوز مؤكد ✅</span></div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script2.js"></script>
+</body>
+</html>
